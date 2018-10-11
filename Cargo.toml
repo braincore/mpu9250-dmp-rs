@@ -1,0 +1,27 @@
+[package]
+name = "mpu9250-dmp"
+version = "1.0.0"
+authors = ["Ken Elkabany <ken@elkabany.com>"]
+license = "MIT"
+description = "Library for the MPU-9250 IMU and Digital Motion Processor."
+repository = "https://github.com/braincore/mpu9250-dmp-rs"
+keywords = ["mpu9250"]
+readme = "README.md"
+
+[dependencies]
+ak8963 = "1.1.0"
+byteorder = "1.1.0"
+i2cdev = "0.3.1"
+ndarray = "0.12"
+
+[dev-dependencies]
+clap = "2.32"
+sysfs_gpio = "0.5"
+
+[[example]]
+name = "scan"
+crate-type = ["bin"]
+
+[[example]]
+name = "scan_dmp"
+crate-type = ["bin"]
